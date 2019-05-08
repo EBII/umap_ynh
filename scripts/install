@@ -93,7 +93,8 @@ sudo bash -c "source ${final_path}/venv/bin/activate && wget https://raw.githubu
 # Replace variables configuration 
 secret=$(ynh_string_random 24)
 language="$(echo $language | head -c 2)"
-ynh_replace_config_umap
+# corriger le localpy a la main
+#ynh_replace_config_umap
 
 # Create STATIC & MEDIA dir
 sudo mkdir "${final_path}/static"
